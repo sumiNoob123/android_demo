@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:text="Crop Recommendation System"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nitrogen"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="#FFE4E1"
+        android:hint="Enter Nitrogen"/>
+
+    <EditText
+        android:id="@+id/phosphorus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phosphorus"
+        android:layout_below="@id/nitrogen"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="20dp"
+        android:background="#FFE4E1"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/potassium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Potassium"
+        android:layout_below="@id/phosphorus"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="#FFE4E1"/>
+
+    <EditText
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Temperature in °C"
+        android:layout_below="@id/potassium"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFE4E1"/>
+
+    <EditText
+        android:id="@+id/humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Humidity in %"
+        android:layout_below="@id/temperature"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="#FFE4E1"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/ph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pH value"
+        android:layout_below="@id/humidity"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="#FFE4E1"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/rainfall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Rainfall in mm"
+        android:layout_below="@id/ph"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="#FFE4E1"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_get_recommendation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Recommendation"
+        android:layout_below="@id/rainfall"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:background="#98F8"
+        />
+
+</RelativeLayout>
